@@ -1,2 +1,2 @@
-# ssankarasubramanian.github.io
-A github site viewer repository so that i can push my website and have a better view
+# ParallaxLandingPage
+This is an attempt to create a parallax landing page through an udemy course
