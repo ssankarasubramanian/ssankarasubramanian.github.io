@@ -62,14 +62,14 @@ body > section {
 
 h2,h3{
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   color: #15365b;
   margin-bottom: 30px;
 }
 
 h4{
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   color: #15365b;
   text-transform: uppercase;
 }
@@ -104,7 +104,7 @@ h2:after,h3:after{
 
 .nav>li>a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   color:#ffffff;
   font-size: 1.3em;
