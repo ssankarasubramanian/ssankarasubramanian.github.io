@@ -1,5 +1,35 @@
+.uk-section-default {
+    background: #f7f7f7;
+}
+
+p{
+font-size:15px;
+}
+
 .uk-navbar-nav>li>a {
     color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 500;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle{
+    min-height:50px;
+}
+
+.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
+    color: #fff;
+    outline: 0;
+    background: #6cc0c7;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    color: #fff;
+    background: #104848;
+}
+
+.uk-navbar-right .uk-navbar-nav>li>a {
+    padding: 10px 20px;
 }
 
 h2{
@@ -11,6 +41,11 @@ h2{
 .uk-grid-divider>:not(.uk-first-column)::before {
     border-left: 2px solid #1494a0;
 }
+
+.uk-divider-icon{
+    margin-top:-10px;
+}
+
 #skills{
     background:#1494a0;
 }
@@ -35,7 +70,153 @@ h2{
     overflow:hidden;
 }
 
-#portfolio .my-overlay{
-    background:rgba(0,0,0,0.6);
-    color:#fff;
+h3.title{
+    font-size: 27px;
+    font-weight: 700;
+    color: #1494a0;
+}
+
+.timeline__item:nth-child(2n) {
+    float: right;
+    clear: both;
+}
+
+.timeline__item:nth-child(2n+1) {
+    float: left;
+    clear: both;
+    padding-right: 40px;
+}
+
+.timeline__content {
+    border: 2px solid #1494a0 !important;
+}
+
+.timeline__item:nth-child(2n) .timeline__content:before {
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #1494a0;
+    border-top: 10px solid transparent;
+    left: -12px;
+    z-index: 5;
+    border-left: 0;
+}
+
+.timeline__item:after {
+    background-color: #fff !important;
+    border: 3px solid #1494a0 !important;
+    font-size: 11px;
+    width: 40px !important;
+    height: 40px !important;
+    right: -20px !important;
+    padding: 10px 3px !important;
+    font-weight: 700;
+}
+
+.timeline__item:nth-child(1):after{
+   content:'2018' !important;
+}
+
+.timeline__item:nth-child(2):after{
+    content:'2017' !important;
+ }
+
+ .timeline__item:nth-child(3):after{
+    content:'2014' !important;
+ }
+
+ .timeline__item:nth-child(4):after{
+    content:'2009' !important;
+ }
+
+
+.timeline__item:nth-child(2n) .timeline__content {
+    margin-left: 40px;
+}
+
+.timeline__item:nth-child(2n+1) .timeline__content:before {
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #1494a0;
+    border-top: 10px solid transparent;
+    right: -12px;
+    z-index: 5;
+}
+
+.timeline__content h5:before{
+    width: 20px;
+    height:20px;
+    content:' ';
+    background-size:contain;
+    margin-right:10px;
+    display:inline-block;
+}
+
+.timeline__item:nth-child(1) h5:before,.timeline__item:nth-child(2) h5:before{
+    background-image:url('../img/portfolio.png');
+}
+
+.timeline__item:nth-child(3) h5:before, .timeline__item:nth-child(4) h5:before{
+    background-image:url('../img/students-cap.png');
+}
+
+.timeline:not(.timeline--horizontal):before {
+    background-color: #1494a0 !important
+}
+
+.timeline__content:after {
+    display: none;
+}
+
+.timeline__item:after {
+    background-color: #fff !important;
+    border: 3px solid #1494a0 !important;
+}
+
+.timeline__item:nth-child(2n):after {
+    left: -20px;
+}
+
+.timeline__content h5 span {
+    float: right;
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.timeline__content h5 {
+    margin-bottom: 0;
+}
+
+.timeline__content span {
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+h5{
+    font-weight:700;
+    color: #1494a0;
+}
+
+.uk-card-default .uk-card-footer {
+    border-top: 1px solid #e5e5e5;
+    font-size: 12px;
+    background: #1494a0;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.uk-button-default {
+    background-color: transparent;
+    color: #1494a0;
+    border: 1px solid #1494a0;
+}
+
+.uk-button-default:hover {
+    background: #1494a0;
+    color: #fff;
+    border: 1px solid #fff;
 }
