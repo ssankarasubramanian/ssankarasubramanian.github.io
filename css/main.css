@@ -46,18 +46,6 @@ h2{
     margin-top:-10px;
 }
 
-#skills{
-    background:#1494a0;
-}
-
-#skills h2{
-    color:#ffffff;
-}
-
-#skills h4{
-    color:#1494a0;
-}
-
 #education h4,#education h5{
     margin:5px 0;
     color:#1494a0;
@@ -211,6 +199,15 @@ h5{
     text-align: center;
 }
 
+.uk-card-media-top img {
+    height: 290px;
+    width: 100%;
+}
+
+#portfolio .uk-grid-margin {
+    margin-top: 40px;
+}
+
 
 .uk-button-default {
     background-color: transparent;
@@ -223,3 +220,98 @@ h5{
     color: #fff;
     border: 1px solid #fff;
 }
+
+.skill-circle{
+    width:100px;
+    height:100px;
+    text-align:center;
+    border-radius:100%;
+    border:1px solid #fff; 
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-50px;
+    background: #1494a0;
+}
+
+.skill-circle p{
+    margin:0;
+    color:#fff;
+    text-align:center;
+    width:100%;
+}
+
+#skills{
+    min-height:700px;
+}
+
+.circle-container{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+.deg45 {transform: rotate(45deg) translate(12em) rotate(-45deg);}
+.deg90 { transform: rotate(90deg) translate(12em) rotate(-90deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+.skill-arrow{
+    width:0px;
+}
+
+.arrowdeg45 {transform: rotate(45deg)}
+.arrowdeg90 { transform: rotate(90deg)}
+.arrowdeg135 { transform: rotate(135deg)}
+.arrowdeg180 { transform: translate(-12em); }
+.arrowdeg225 { transform: rotate(225deg)}
+.arrowdeg270 { transform: rotate(270deg)}
+.arrowdeg315 { transform: rotate(315deg)}
+
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    -webkit-animation-name: rotate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation: rotate ease-in 1s infinite;
+    background:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-50px;
+  }
+
+  .skill-arrow{
+    -webkit-animation-name: arrow; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation: arrow ease-in 1s;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    50%  {transform: rotate(180deg)}
+    100% {transform: rotate(0deg)}
+  }
+  
+  /* Standard syntax */
+  @keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    50%  {transform: rotate(180deg)}
+    100% {transform: rotate(0deg)}
+  }
+
+  @-webkit-keyframes arrow {
+    0%   {width: 50px}
+    50%  {width: 75px}
+    100% {width: 100px}
+  }
+
+
+

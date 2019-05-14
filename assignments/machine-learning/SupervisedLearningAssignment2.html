@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11770,39 +11768,19 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
-    <div class="uk-sticky uk-position-top">
-        <a id="target" class="uk-button uk-button-primary" href="index.html" uk-scroll="">Go Back</a>
-    </div>
-    <div class="uk-sticky uk-position-bottom">
-        <a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll="">Scroll up</a>
-    </div>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><em>You are currently looking at <strong>version 1.5</strong> of this notebook. To download notebooks and datafiles, as well as get help on Jupyter notebooks in the Coursera platform, visit the <a href="https://www.coursera.org/learn/python-machine-learning/resources/bANLa">Jupyter Notebook FAQ</a> course resource.</em></p>
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-2">Assignment 2<a class="anchor-link" href="#Assignment-2">&#182;</a></h1><p>In this assignment you'll explore the relationship between model complexity and generalization performance, by adjusting key parameters of various supervised learning models. Part 1 of this assignment will look at regression and Part 2 will look at classification.</p>
+<h1 id="Assignment-2---Supervised-Machine-Learning">Assignment 2 - Supervised Machine Learning<a class="anchor-link" href="#Assignment-2---Supervised-Machine-Learning">&#182;</a></h1><p>In this assignment you'll explore the relationship between model complexity and generalization performance, by adjusting key parameters of various supervised learning models. Part 1 of this assignment will look at regression and Part 2 will look at classification.</p>
 <h2 id="Part-1---Regression">Part 1 - Regression<a class="anchor-link" href="#Part-1---Regression">&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11855,15 +11833,17 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
-<div id="505b36ba-a675-49aa-94d6-b801bd01ca66"></div>
+
+<div id="9d4eaed6-ed54-4ebd-a8f8-8b507a69d8e1"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#505b36ba-a675-49aa-94d6-b801bd01ca66');
+var element = $('#9d4eaed6-ed54-4ebd-a8f8-8b507a69d8e1');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -12637,7 +12617,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12650,13 +12632,12 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h3><p>Write a function that fits a polynomial LinearRegression model on the <em>training data</em> <code>X_train</code> for degrees 1, 3, 6, and 9. (Use PolynomialFeatures in sklearn.preprocessing to create the polynomial features and then fit a linear regression model) For each model, find 100 predicted values over the interval x = 0 to 10 (e.g. <code>np.linspace(0,10,100)</code>) and store this in a numpy array. The first row of this array should correspond to the output from the model trained on degree 1, the second row degree 3, the third row degree 6, and the fourth row degree 9.</p>
-<p><img src="readonly/polynomialreg1.png" style="width: 1000px;"/></p>
+<p><img src="polynomialreg1.png" style="width: 1000px;"/></p>
 <p>The figure above shows the fitted models plotted on top of the original data (using <code>plot_one()</code>).</p>
 <p><br>
 <em>This function should return a numpy array with shape <code>(4, 100)</code></em></p>
@@ -12705,7 +12686,9 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[3]:</div>
+
 
 
 
@@ -12884,15 +12867,17 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
-<div id="113e2bc3-6cf0-4923-b6df-1ef9a3cdaf32"></div>
+
+<div id="b8c02996-f0f5-44a9-a57e-7e5fce2fb573"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#113e2bc3-6cf0-4923-b6df-1ef9a3cdaf32');
+var element = $('#b8c02996-f0f5-44a9-a57e-7e5fce2fb573');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13666,7 +13651,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -13679,8 +13666,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13736,7 +13722,9 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[5]:</div>
+
 
 
 
@@ -13753,8 +13741,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13815,15 +13802,17 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
-<div id="895175da-7f2b-4273-b490-a3f261d2a61f"></div>
+
+<div id="3dcd2783-8d76-468a-bc7d-d7fea1988597"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#895175da-7f2b-4273-b490-a3f261d2a61f');
+var element = $('#3dcd2783-8d76-468a-bc7d-d7fea1988597');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14597,7 +14586,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -14607,7 +14598,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[6]:</div>
+
 
 
 
@@ -14621,8 +14614,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14668,7 +14660,9 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/conda/lib/python3.6/site-packages/sklearn/linear_model/coordinate_descent.py:484: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Fitting data with very small alpha may cause precision problems.
@@ -14678,7 +14672,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[7]:</div>
+
 
 
 
@@ -14692,8 +14688,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14762,8 +14757,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14806,7 +14800,9 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[9]:</div>
+
 
 
 
@@ -14820,8 +14816,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14890,7 +14885,9 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[10]:</div>
+
 
 
 
@@ -14906,8 +14903,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14967,15 +14963,17 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
 
 
 
-<div id="db81f9f9-22e8-4ca2-ba7d-f42a2a339695"></div>
+
+<div id="41686ec4-f599-4d50-992d-20742f4592fb"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#db81f9f9-22e8-4ca2-ba7d-f42a2a339695');
+var element = $('#41686ec4-f599-4d50-992d-20742f4592fb');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15749,7 +15747,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -15759,7 +15759,9 @@ if (IPython.notebook.kernel != null) {
 </div>
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[11]:</div>
+
 
 
 

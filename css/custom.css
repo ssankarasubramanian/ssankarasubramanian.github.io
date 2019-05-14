@@ -1,64 +1,46 @@
-.uk-sticky.uk-position-bottom {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
+body{
+    padding:0;
 }
 
-.uk-sticky.uk-position-top {
-    position:absolute;
-    top: 20px;
-    left: 30px;
-}
-
-a#target {
-    background-color: #1e87f0;
-    color: #fff;
-    border: 1px solid transparent;
-    display: inline-block;
+.uk-sticky-header{
+    background: #1494a0;
+    z-index: 980;
     box-sizing: border-box;
-    padding: 0 30px;
-    vertical-align: middle;
-    font-size: 14px;
-    line-height: 38px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .1s ease-in-out;
-    transition-property: color,background-color,border-color;
-}
-
-a#target:hover {
-    background-color: #0f7ae5;
-    color: #fff;
-}
-
-
-.uk-sticky.uk-position-bottom {
+    margin: 0!important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    top: 0px;
+    width: 1440px;
 }
 
-a#target {
-    background-color: #1e87f0;
+.uk-navbar-nav>li>a {
     color: #fff;
-    border: 1px solid transparent;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 0 30px;
-    vertical-align: middle;
-    font-size: 14px;
-    line-height: 38px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .1s ease-in-out;
-    transition-property: color,background-color,border-color;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 500;
 }
 
-a#target:hover {
-    background-color: #0f7ae5;
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle{
+    min-height:50px;
+}
+
+.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
     color: #fff;
+    outline: 0;
+    background: #6cc0c7;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    color: #fff;
+    background: #104848;
+}
+
+.uk-sticky.uk-position-bottom{
+    position: fixed !important;
+    bottom: 30px;
+    right: 0;
+    left: auto;
 }
 
 #notebook-container {
@@ -133,7 +115,6 @@ div.input_area {
     font-size: 20px;
     position: relative;
     top: 35px;
-    font-size: 26px;
     font-weight: 400;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     color: #313131;
