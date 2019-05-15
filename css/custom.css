@@ -47,10 +47,6 @@ body{
     box-shadow: none;
 }
 
-div.text_cell:nth-child(1) {
-    display: none;
-}
-
 .prompt {
     display: none;
 }

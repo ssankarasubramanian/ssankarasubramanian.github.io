@@ -1,3 +1,4 @@
+
 .uk-section-default {
     background: #f7f7f7;
 }
@@ -6,49 +7,121 @@ p{
 font-size:15px;
 }
 
-.uk-navbar-nav>li>a {
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 30px;
-    font-weight: 500;
-}
 
 .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle{
     min-height:50px;
 }
 
+.uk-navbar-nav>li>a img {
+    width: 50px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.navigation .navbar {
+    background: transparent;
+    width: 100%;
+    background: #000;
+    top: 0;
+    z-index: 10;
+}
+
+.uk-navbar-nav>li>a,.uk-navbar-nav>li>a:hover,
 .uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
-    color: #fff;
-    outline: 0;
-    background: #6cc0c7;
+    color: #2ecbde;
+    display: block;
+    font-size: 16px;
+    padding: 10px 30px;
+    margin: 0px 50px;
 }
 
-.uk-navbar-nav>li.uk-active>a {
-    color: #fff;
-    background: #104848;
+.uk-navbar-nav>li>a span {
+    display: block;
+    font-size: 14px;
 }
 
-.uk-navbar-right .uk-navbar-nav>li>a {
-    padding: 10px 20px;
+.uk-navbar-nav>li>a:hover {
+    background: #f7f7f7;
 }
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.github{
+    background: #404040;
+    color: white;
+}
+
+.phone{
+    background:  #44e25e;
+    color: #fff;
+}
+
+.mail{
+    background: #636395;
+    color: #fff;
+}
+  
+  
 
 h2{
     font-size:36px;
-    color:#1494a0;
+    color:#1eacbd;
     font-weight:600;
 }
 
 .uk-grid-divider>:not(.uk-first-column)::before {
-    border-left: 2px solid #1494a0;
+    border-left: 2px solid #2ab9ca;
 }
 
 .uk-divider-icon{
     margin-top:-10px;
 }
 
+#about{
+    height:70vh;
+    background:#e9ecf1;
+    padding:200px 100px;
+}
+
+.about-bg{
+    background: #f7f7f7;
+    padding:50px;
+    border-radius:40px;
+}
+
+section#education,
+section#portfolio,
+section#certifications {
+    padding-top: 160px;
+}
+
 #education h4,#education h5{
     margin:5px 0;
-    color:#1494a0;
+    color: #2ab9ca;
     font-weight:500;
 }
 
@@ -64,7 +137,7 @@ h2{
 h3.title{
     font-size: 27px;
     font-weight: 700;
-    color: #1494a0;
+    color: #2ab9ca;
 }
 
 .timeline__item:nth-child(2n) {
@@ -79,12 +152,12 @@ h3.title{
 }
 
 .timeline__content {
-    border: 2px solid #1494a0 !important;
+    border: 2px solid #0e0e0e !important;
 }
 
 .timeline__item:nth-child(2n) .timeline__content:before {
     border-bottom: 10px solid transparent;
-    border-right: 12px solid #1494a0;
+    border-right: 12px solid #000000;
     border-top: 10px solid transparent;
     left: -12px;
     z-index: 5;
@@ -93,12 +166,12 @@ h3.title{
 
 .timeline__item:after {
     background-color: #fff !important;
-    border: 3px solid #1494a0 !important;
+    border: 3px solid #2ab9ca !important;
     font-size: 11px;
-    width: 40px !important;
-    height: 40px !important;
-    right: -20px !important;
-    padding: 10px 3px !important;
+    width: 50px !important;
+    height: 50px !important;
+    right: -25px !important;
+    padding: 15px 8px !important;
     font-weight: 700;
 }
 
@@ -125,7 +198,7 @@ h3.title{
 
 .timeline__item:nth-child(2n+1) .timeline__content:before {
     border-bottom: 10px solid transparent;
-    border-left: 12px solid #1494a0;
+    border-left: 12px solid #000000;
     border-top: 10px solid transparent;
     right: -12px;
     z-index: 5;
@@ -149,7 +222,7 @@ h3.title{
 }
 
 .timeline:not(.timeline--horizontal):before {
-    background-color: #1494a0 !important
+    background-color: #000000 !important;
 }
 
 .timeline__content:after {
@@ -157,8 +230,9 @@ h3.title{
 }
 
 .timeline__item:after {
-    background-color: #fff !important;
-    border: 3px solid #1494a0 !important;
+    background-color: #2ab9ca !important;
+    border: 2px solid #020202 !important;
+    color: #fff !important;
 }
 
 .timeline__item:nth-child(2n):after {
@@ -187,13 +261,17 @@ h3.title{
 
 h5{
     font-weight:700;
-    color: #1494a0;
+    color: #2ab9ca;
+}
+
+.uk-card-default .uk-card-body{
+    min-height:235px;
 }
 
 .uk-card-default .uk-card-footer {
     border-top: 1px solid #e5e5e5;
     font-size: 12px;
-    background: #1494a0;
+    background: #2ab9ca;
     padding: 10px;
     color: #fff;
     text-align: center;
@@ -212,11 +290,11 @@ h5{
 .uk-button-default {
     background-color: transparent;
     color: #1494a0;
-    border: 1px solid #1494a0;
+    border: 1px solid #2ab9ca;
 }
 
 .uk-button-default:hover {
-    background: #1494a0;
+    background: #2ab9ca;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -231,7 +309,7 @@ h5{
     top:50%;
     left:50%;
     margin:-50px;
-    background: #1494a0;
+    background: #2ab9ca;
 }
 
 .skill-circle p{
