@@ -30,8 +30,8 @@
     <section class="navigation">
         <div class="navbar uk-position-fixed">
             <nav class="uk-navbar-container uk-navbar-transparent primary-nav" uk-navbar>
-                <div class="uk-navbar-center nav-center uk-visible@m">
-                    <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+                <div class="uk-navbar-center nav-center">
+                    <ul class="uk-navbar-nav uk-child-width-1-4" uk-scrollspy-nav="closest: li; scroll: true">
                         <li>
                             <a href="index.html"><img src="img/target.png"/><span>About me</span></a>
                         </li>
@@ -62,12 +62,10 @@
                     </div>
                     <div class="uk-card-body uk-padding-small">
                         <h5>Predictive Maintenance - Turbofan Engine Degradation </h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book</p>
+                        <p>Developed a predictive model to analyse the degradation of aircraft turbofan enginens. Applied classification and regression approaches using XGBoost. Identified areas of improvement to handle the noise within the dataset. Used descrimination threshold to adjust classifier for better recall</p>
                         <a class="uk-button uk-button-default uk-align-center uk-margin-remove-top uk-border-rounded" href="projects/turbofan-analysis/turbofan.html" target="_blank">Notebook</a>
                     </div>
-                    <div class="uk-card-footer">Python, Scikit-learn, Decision Trees, SVM, Adaboost</div>
+                    <div class="uk-card-footer">Python, Scikit-learn, Pandas, NumPy, SHAP, XGBoost</div>
                 </div>
             </div>
             <div class="">
@@ -77,12 +75,10 @@
                     </div>
                     <div class="uk-card-body uk-padding-small">
                         <h5>Predictive Maintenance - APS Failure in Scania Trucks</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book</p>
+                        <p>Binary Classification modelling to identify Scania Trucks that are in imminent failure of air pressure systems. Applied SMOTE Oversampling techniques to handle highly imbalanced dataset. Used  cost sensitive learning to optimize model low misclassification cost  </p>
                         <a class="uk-button uk-button-default uk-align-center uk-margin-remove-top uk-border-rounded" href="projects/scania-analysis/scania.html" target="_blank">Notebook</a>
                     </div>
-                    <div class="uk-card-footer">Python, Scikit-learn, Decision Trees, SVM, Adaboost</div>
+                    <div class="uk-card-footer">Python, Scikit-learn, Pandas, NumPy, Random Forest</div>
                 </div>
             </div>
             <div class="">
@@ -91,13 +87,12 @@
                         <img src="./img/Detroit.jpg" alt="">
                     </div>
                     <div class="uk-card-body uk-padding-small">
-                        <h5>Detroit Blight Violation - Prediction of Blight Fines Compliance </h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book</p>
+                        <h5>Detroit Blight Violation - Fines Compliance </h5>
+                        <p>Analysed the property owner’s violation of maintenance to classify their compliance level for paying the fine. Applied categorical encoding techniques and immplemented gradient boosted decision tree model and achieved 90% accuracy in identifying violators not paying fines for property maintenance violations
+                        </p>
                         <a class="uk-button uk-button-default uk-align-center uk-margin-remove-top uk-border-rounded" href="projects/detroit-analysis/detroit.html" target="_blank">Notebook</a>
                     </div>
-                    <div class="uk-card-footer">Python, Scikit-learn, Decision Trees, SVM, Adaboost</div>
+                    <div class="uk-card-footer">Python, Scikit-learn, Gradient Boosting, Pandas, NumPy</div>
                 </div>
             </div>
             <div class="">
@@ -107,12 +102,10 @@
                     </div>
                     <div class="uk-card-body uk-padding-small">
                         <h5>Credit Analysis</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book</p>
-                        <a class="uk-button uk-button-default uk-align-center uk-margin-remove-top uk-border-rounded" href="projects/scania-analysis/scania.html" target="_blank">Notebook</a>
+                        <p> Binary Classification model to identify fraudulent credit card transaction amongst european credit card holders. Analysed different imbalanced learning methods to handle highly imbalanced data.Used keras to generate balanced data and sequential models to achieve a F-1 Score of 0.82</p>
+                        <a class="uk-button uk-button-default uk-align-center uk-margin-remove-top uk-border-rounded" href="projects/credit-analysis/creditcard.html" target="_blank">Notebook</a>
                     </div>
-                    <div class="uk-card-footer">Python, Scikit-learn, Decision Trees, SVM, Adaboost</div>
+                    <div class="uk-card-footer">Python, Scikit-learn, Keras, Pandas, NumPy, Plotly</div>
                 </div>
             </div>
         </div>
